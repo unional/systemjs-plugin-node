@@ -1,0 +1,36 @@
+import systemjs = require('./index')
+
+(async function() {
+  systemjs.config({
+    // baseURL: 'node_modules',
+    // packageConfigPaths: [
+    //   '@*/*/package.json',
+    //   '*/package.json'
+    // ],
+    map: {
+      'app': './fixtures/jsx',
+      'plugin-node': './dist-es5/plugin.js'
+    },
+    packages: {
+      'app': {
+        defaultExtension: false,
+        meta: {
+          '*': {
+            loader: 'plugin-node',
+            'nodeOptions': {
+              'meta': {
+                '*.ts': {
+                  'loader': 'ts'
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  } as any)
+  // const is = await systemjs.import('param-case')
+  // console.log('is???', is)
+  const index = await systemjs.import('./fixtures/jsx/index.js')
+  console.log(index.foo())
+})()
