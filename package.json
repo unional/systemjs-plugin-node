@@ -64,7 +64,6 @@
     }
   },
   "devDependencies": {
-    "@unional/logging": "^0.2.3",
     "aurelia-logging-color": "^0.5.11",
     "aurelia-polyfills": "^1.2.2",
     "ava": "^0.24.0",
@@ -83,6 +82,7 @@
     "typescript": "^2.6.2"
   },
   "dependencies": {
+    "@unional/logging": "^0.2.3",
     "is-windows": "^1.0.1"
   }
 }
