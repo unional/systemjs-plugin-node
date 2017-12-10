@@ -1,5 +1,5 @@
 {
-  "name": "systemjs-node",
+  "name": "systemjs-plugin-node",
   "description": "SystemJS for node",
   "version": "0.1.0",
   "main": "dist-es5/index.js",
