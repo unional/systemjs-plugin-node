@@ -7,8 +7,6 @@
 [![semantic-release][semantic-release-image]][semantic-release-url]
 [![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 
-
-
 ## Contribute
 
 ```sh
